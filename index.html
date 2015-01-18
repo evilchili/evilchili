@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<!--
+                    ___             __                ___
+                __ /\_ \           /\ \       __     /\_ \    __    
+   __   __  __ /\_\\//\ \      ___ \ \ \___  /\_\    \//\ \  /\_\   
+ /'__`\/\ \/\ \\/\ \ \ \ \    /'___\\ \  _ `\\/\ \     \ \ \ \/\ \  
+/\  __/\ \ \_/ |\ \ \ \_\ \_ /\ \__/ \ \ \ \ \\ \ \  __ \_\ \_\ \ \ 
+\ \____\\ \___/  \ \_\/\____\\ \____\ \ \_\ \_\\ \_\/\_\/\____\\ \_\
+ \/____/ \/__/    \/_/\/____/ \/____/  \/_/\/_/ \/_/\/_/\/____/ \/_/
+
+ I think all websites should contain a Developer's Commentary, don't you?
+
+ -->
+<head>
+    <title>Greg Boyington: Web App Developer/SysAdmin/DevOps For Hire</title>
+
+    <meta name="description" content="Greg Boyington is a Web Applications Developer, SysAdmin And DevOps person looking for work.">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- while I make revisions, please to index frequently, robots -->
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="revisit-after" content="2 days">
+
+    <link href='/static/css/site.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- 
+    The layout of this page is trivial, with one sidebar column for the chili head image, and a single
+    "main" column for the content. This is a resume; don't lets over-complicate it.
+
+    bootstrap containers are responsive by default; we tweak margins on the #wrap element in site.css.
+    -->
+    <div id='wrap' class='container'>
+        <div class='row'>
+            <div id='sidebar' class='col-md-2 col-sm-2 hidden-xs hidden-sm'>
+                <!-- the chili head and menu icons were made using make8bitart.com \m/ -->
+                <img src='/static/img/8bitchilihead.gif'  class='img-responsive' alt='chilihead'>
+            </div>
+            <div id='main' class='col-md-10 col-sm-12 col-xs-12'>
+                <!-- this chili head only appears on small-screen devices -->
+                <div class='visible-xs visible-sm pull-left'>
+                    <img id='mobile_head' width='100' src='/static/img/8bitchilihead.gif'  alt='chilihead'>
+                </div>
+
+                <!-- 
+                The main header and menu. This is small enough we don't need nav elmeents or hamburgers or etc,
+                but we do employ some rejiggering for printing, via media queries in site.css.
+                -->
+                <div id='menu' class='pull-left'>
+                    <h1 id='name'>greg_boyington</h1>
+                    <div class='hidden-print'>
+                        <a title='twitter' href='https://twitter.com/evilchili'><img src='/static/img/twitter_icon.png'  alt='twitter'></a>
+                        <a title='github' href='https://github.com/evilchili'><img src='/static/img/github_icon.png'  alt='github'></a>
+                        <a title='linked in' href='http://www.linkedin.com/in/evilchili'><img src='/static/img/linkedin_icon.png'  alt='linked in'></a>
+                        <!-- the twitter and github icons have a few pixels of whitespace, but the email doesn't, so nudge it -->
+                        &nbsp;<a title='email' href='mailto:hello@evilchi.li'><img src='/static/img/email_icon.png'  alt='email'></a>
+                        <br>
+                    </div>
+                    <ul id='roles'>
+                        <li>Web Application Developer</li>
+                        <li>Systems Adminsistrator</li>
+                        <li>DevOps Doer</li>
+                        <li>Problem Solver</li>
+                    </ul>
+                    <div class='visible-print'>
+                        <ul id='print_menu'>
+                            <li><img src='/static/img/email_icon.png' alt='email'>hello@evilchi.li</li>
+                            <li><img src='/static/img/twitter_icon.png' alt='twitter'>@evilchili</li>
+                            <li><img src='/static/img/github_icon.png' alt='github'>evilchili</li>
+                            <li><img src='/static/img/linkedin_icon.png' alt='linkedin'>evilchili</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--
+                Make sure the floats don't mess with the remaining layout. On this page they wouldn't, actually, but 
+                I always throw in a clearfix after using floats, so I'm not surprised/irritated with broken layouts later.
+                -->
+                <div class='clearfix'></div>
+    
+                <!--
+                Resume writing is the worst. Do I go super clean and formal? Do I go full conversational, and crack wise?
+                Some combination of the two? Do I list everything I can think of, or only the most impressive bits, possibly
+                excluding something someone will care about? I need to have a lie down.
+                -->
+                <h3>Summary</h3>
+                <p>
+                I've been keeping the geblinkenlights geblinking since the early 90s; if it happens in, around, or near a rack I've done it. My skills include: systems administration, back-end systems programming and front-end web applications, database management and RDBS design, source control administration, configuration management, build and release engineering, and plenty more I'm forgetting. I've managed teams, run training, designed and implemented budgets and policy for both IT and Web Operations.
+                </p>
+                <p>
+                I'm allergic to dogma, your favourite programming language is great, and I make a mean cup of coffee.
+                </p>
+    
+                <!-- 
+                This is a diplomatic way to say "I'm tired of working on products that suck, or products that rock but fail because the company sucks, or
+                products that rock with people that rock but fail anyway because market forces." Also, could it not be advertising?
+                 -->
+                <h3>Objective</h3>
+                <p>
+                I'm looking to put my skills to use working on products and services that matter to people. For the last few years I've really enjoyed full-time
+                web application development, but I still got love for the <s>streets</s> sysadmining. I'd prefer to telecommute but will happily come
+                in to the office if that's how you roll.
+                </p>
+    
+                <!--
+                Or what I like to call, "Justify Your Existence."
+                -->
+                <h3>Work History</h3>
+
+                <!--
+                IMG is a CompuGlobalHyperMegaNet in IP licensing. I didn't much care for the company, and it 
+                didn't much care for me. But my team was awesome, I loved working with them, and they earned
+                my loyalty. I was fortunate to be able to transition out of the IT department when IMG 
+                acquired Caustic, because I was most definitely not compatible with IMG's IT group.
+                -->
+                <h4>Senior Developer Technology Engineer @ Imagination Technologies</h4>
+                <i>January 2011 &dash; February 2015</i><br>
+                <p>
+                    <b>Key technology &amp; skills:</b> Python, Django, Redis, MySQL, MongoDB, JavaScript, JQuery, HTML5, CSS3, LessCSS, bash, fabric, Jenkins, Debian, nginx, virtualization
+                </p>
+                I built a lot of things. Some of my favourites were:
+                <ul>
+                    <li>Designed, deployed and maintained all customer-facing services for getvisualizer.com, including: CMS, blog and web store, end-user licensing and activation servers, application metrics and analytics servers, all continuously deployed from git by jenkins and custom fabric build tools to high-availability clusters hosted by RackSpace;</li>
+                    <li>Tools for continuously-deploying fully-automated and self-healing infrastructure to the RackSpace Managed Cloud, used for production infra deployments and daily spin up/tear-down of a complete staging environment;</li>
+                    <li>Cross-platform build, test and release tools that ran the build pipeline from initial check-in to build and smoke tests all the way through regression testing of multiple end-user products and internal tools;</li>
+                    <li>Automated software verification and regression toolkit and data-visualization tools</li>
+                </ul>
+
+                <!--
+                Caustic was a start-up focused on delivering realtime raytracing solutions in both hardware and software.
+                They acquired SplutterFish in '08, and me along with it. I loved working for Caustic, and loved the 
+                people, even if it increased my Imposter Syndrome by orders of magnitude. Bunch of *really* smart folks.
+
+                If you want to see me twitch, ask me about the time I rebuilt an entire JIRA database by parsing inboxes on Exchange.
+                -->
+                <h4>I.T. Manager @ Caustic Graphics, Inc.</h4>
+                <i>October 2008 &dash; January 2011</i><br>
+                <p>
+                    <b>Key technology &amp; skills:</b> Debian, Windows, OS X, VMWare, Active Directory, Open Directory, LDAP, NFS, Samba, JIRA, Confluence, perl, PHP, JavaScript, JQuery, HTML, CSS, Apache, git, subversion, postfix, Zimbra, Exchange Server, Nagios, Puppet
+                </p>
+                <ul>
+                    <li>Designed, deployed and maintained all customer-facing services for caustic.com, including CMS, CRM, blog, web store and forums;</li>
+                    <li>Built custom license management tools for end-user applications;</li>
+                    <li>Administered a mixed computing environment of dozens of Windows, OS X and Linux workstations and servers;</li>
+                    <li>Maintained revision control systems for software and hardware engineering teams;</li>
+                    <li>Maintained internal tools in the critical path, ensuring cross-platform AD/OD interoperability, the Atlassian product suite, etc;</li>
+                    <li>Deployed new infrastructure including migrations from subversion to git, exchange server to zimbra, buildbot to hudson, jabber to IRC</li>
+                    <li>Implemented backup and disaster recovery schemes using custom cross-platform backup software;</li>
+                    <li>Frequent collaborations across multiple departments to maintain interoperability and communication</li>
+                    <li>Advised on budget and security policies</li>
+                </ul>
+    
+                <!--
+                SplutterFish was a start-up that built Brazil r/s, rendering software which in its prime was used by
+                the likes of Blizzard, LucasArts and Pixar. The founders gave me a huge break and took a risk giving 
+                a young fellow complete control of the company's infrastructure. I practised what would later be called 
+                DevOps by young people, and "Isn't That Just How You're Supposed To Do Systems Administration?" by the
+                rest of us.
+
+                This was also the beginning of my telecommuting full time, which I've done ever since. That's over a 
+                decade of pants-optional programming and sysadmining, to which I attribute my continued success.
+                -->
+                <h4>I.T. Director @ SplutterFish, LLC</h4>
+                <i>April 2003 &dash; October 2008</i><br>
+                <p>
+                    <b>Key technology &amp; skills:</b> FreeBSD, perl, HTML::Mason, PHP, Apache, twiki, bugzilla
+                </p>
+                <ul>
+                    <li>Designed, deployed and maintained all customer-facing services for splutterfish.com, including CMS, CRM, web store, forums;</li>
+                    <li>Implemented an integrated customer support system using IRC, web-based chat proxies, FTP, forums and wiki;</li>
+                    <li>Built, maintained and administered FreeBSD servers for splutterfish.com;</li>
+                    <li>Responsible for all technical budget, policy, and security considerations</li>
+                </ul>
+
+
+                <!--
+                Lots of little contracts over the years, mostly unremarkable. Restaurant menu websites, workstation sales and service, 
+                network troubleshooting, lots of different things for me to learn. For larger projects I brought in two or three 
+                colleagues to collaborate. It was enough to keep me off the dole, but that's about all, and I hated the stress of
+                constantly chasing the next contract, the next client. Definitely not built for freelancing, me.
+                -->
+                <h4>SysAdmin, IT Consultant, Web Developer @ Gold &amp; Appel Development</h4>
+                <i>January 1996 &dash; October 2008</i><br>
+                <p>
+                    <b>Key technology &amp; skills:</b> FreeBSD, Solaris, perl, HTML, CSS, XML
+                </p>
+                <p>
+                For several years I ran an independent IT consulting and programming firm, focusing on short-term contracts and website bootstrapping.
+                </p>
+                <p>
+                My favourite work during this period was for the Canadian Adoptees Registry, an organization dedicated to reuniting adopted children
+                with their birth families. We provided them with custom data reporting and analysis tools, basic content management and infrastructure
+                for their website. 
+                </p>
+    
+                <h4>Programmer @ Barrie Connex</h4>
+                <i>January 1996 &dash; May 1999</i><br>
+                <p>
+                <b>Key technology &amp; skills:</b> Solaris, perl, HTML, CSS, XML
+                </p>
+                <ul>
+                    <li>Helped build a custom ISP authentication, billing and customer management platform;</li>
+                    <li>Designed and depoyed a custom helpdesk ticketing system for end-user support;</li>
+                    <li>Assisted with systems and network administration of NNTP, Radius, web and mail servers</li>
+                </ul>
+
+                <!--
+                There's other stuff I could list here, like running the Technical Support group at Barrie Connex
+                before moving into programming, some work in my teens maintaining desktops and servers for
+                small companies, but good goddess I'm tired of talking about myself. And anyway if you
+                aren't sold on the 20 years of experience I did list, are you really going to be swayed by finding
+                out I wrote data migration tools in perl to parse CSVs and stuff them into FoxPro databases when
+                I was sixteen?
+
+                ...unless you're a FoxPro shop, I suppose, in which case, please don't contact me.
+                -->
+    
+                <!--
+                Does anybody care about this? I don't think I have ever passed on a resume because the applicant
+                has weird hobbies. Likewise, I've never given anyone a second look because ZOMG YOU LIKE DOCTOR WHO TOO??
+                Honestly, I added this because the page felt like it needed a wrap-up, not because I think you care I care about dogs.
+                -->    
+                <h3>Interests And Hobbies</h3>
+                <p>
+                I am down with nerdery of all kinds; my particular flavour encompasses music, gaming (video and board and card), fiction, coffee, and dogs.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--
+    Well, that's it! Thanks for reading, and being interested enough in me to hit View Source. Let's have coffee, shall we?
+    -->
+</body>
+</html>

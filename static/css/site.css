@@ -1,0 +1,177 @@
+/*
+ * site.css -- global styles for evilchi.li
+ */
+
+
+/*
+Load presentation and paragraph fonts via Google Fonts, because easy. 
+On production sites, I would serve the font assets locally rather than
+use an external dependency. Live and die by your own infra, not someone
+else's, I say.
+*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,600|Press+Start+2P');
+
+/*
+I'm using bootstrap because I'm a big fan of the mobile-first grid and responsive tools.
+*/
+@import url('/static/css/bootstrap.min.css');
+
+/* set the default text styles */
+body {
+    font-family: "Open Sans", Helvetica, Arial, Sans-Serif !important;
+	font-size: 18px;
+}
+b { color: #202020; }
+a { color: #0000FF; }
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+/* use the 8-bit presentation font for headers */
+h1, h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2p', Helvetica, Sans-Serif;
+	font-size: 14px;
+}
+
+	h1 { font-size: 32px; }
+
+/* h4s are used to delinate sections of the work history */
+h4 {
+    border-top: 1px solid #DDD;
+    padding-top: 5px;
+	margin-top: 15px;
+    margin-bottom:5px;
+	font-weight: bold;
+}
+
+/* #wrap is the outer-most DIV; margins here are against the browser window */
+#wrap {
+    margin:0px auto;
+	margin-top: 5px;
+}
+
+/* give the main header (my name) some space so it aligns nicely with the chili head */
+#name {
+	margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* add some block-level and letter spacing, to give the text a lighter feel */
+p, ul, li {
+    letter-spacing: 1px !important;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+/* #menu is the external link icons under the main title */
+#menu img {
+	width:25px;
+	margin-bottom: 10px;
+}
+#menu a {
+	margin-bottom: 5px;
+	border-bottom: 2px solid transparent;
+}
+#menu a:active, #menu a:hover {
+	border-bottom: 2px solid blue;
+}
+
+
+/* The list of roles I fill is just a non-indented list, but
+ * needs to be a UL so it can be reformatted for print (see below).
+ */
+#roles {
+	display:block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#roles li {
+	margin:0;
+}
+
+/* adjust font sizes and margins for large screens */
+@media (min-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+	h2 { font-size: 24px; }
+	h3 { font-size: 18px; }
+	#name { margin-top: 35px; }
+	#wrap { margin-top: 35px; }
+	#main { max-width: 600px; }
+}
+
+/* make some adjustments when someone prints the resume */
+@media print { 
+
+	body {
+		font-size: 12px;
+	}
+
+	#main {
+		position:relative;
+		width:100%;
+	}
+	
+	/* hide my big fat head */
+	#sidebar { display:none; }
+
+	/* helper classes to specify blocks should be shown or hidden for print */
+	.visible-print { display: block !important; }
+	.hidden-print { display: none !important; }
+
+	/* adjust the margins for the masthead */
+	#name {
+		margin-top: 0px;
+		font-size: 28px;
+		margin-bottom: 5px;
+	}
+	#menu {
+		margin-left: 20px;
+	}
+
+	h4 { font-size: 16px; }
+	p, ul, li {
+		margin-bottom: 5px;
+		letter-spacing: normal;
+		color: #000;
+	}
+
+	/* when printing the page, the menu is converted from a list of 
+	 * anchors on icons to a single line of addresses prepended by 
+	 * the icon, as defined by #print_menu. 
+	 */
+	#print_menu {
+		font-weight: bold;
+		margin: 0px;
+		padding:0px;
+		margin-top: 5px;
+		list-style-type: square;
+	}
+	#print_menu li {
+		display: inline;
+		margin-right: 10px;
+	}
+	#print_menu li img {
+		width:16px;
+		margin-right: 2px;
+	}
+	#mobile_head {
+		width:50px;
+	}
+
+	/* convert my list of rules to a comma-separated list on a single line */
+	#roles li {
+		display:inline;
+		font-size: 10px;
+	}
+	#roles li:after { content: ", "; }
+	#roles li:last-child:after { content: ""; }
+
+
+
+
+}

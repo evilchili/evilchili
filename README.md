@@ -1,2 +1,2 @@
 # evilchili
-website source for résumé
+Source for my résumé, online at http://evilchi.li/
