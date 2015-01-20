@@ -68,6 +68,7 @@ p, ul, li {
 /* #menu is the external link icons under the main title */
 #menu img {
     width:25px;
+	max-height:25px;
     margin-bottom: 10px;
 }
 #menu a {
@@ -78,6 +79,12 @@ p, ul, li {
     border-bottom: 2px solid blue;
 }
 
+
+#pdf_link {
+	display:None;
+	width:25px;	
+	margin: 10px auto;
+}
 
 /* The list of roles I fill is just a non-indented list, but
  * needs to be a UL so it can be reformatted for print (see below).
