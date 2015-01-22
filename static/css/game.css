@@ -1,0 +1,33 @@
+html, body {
+    margin:0px;
+    padding:0px;
+    font-size:14pt;;
+}
+
+#controls {
+    border: 1px solid black;
+    padding:10px;
+    margin:2px;
+}
+
+.canvas-container {
+    position:fixed !important;
+    width:100% !important;
+    height:100% !important;
+    z-index:0 !important;
+    left:0px !important;
+    top:0px !important;
+    margin:0px !important;
+    padding:0px !important;
+}
+#c {
+    background: #E0E0FF;
+    position:absolute;
+    height:200px;
+    left:0px;
+    top: auto !important;
+    bottom:1px !important;
+    -webkit-user-select: none;
+    margin:0px;
+    padding:0px;
+}

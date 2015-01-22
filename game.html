@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>game</title>
+        <link rel='stylesheet' type='text/css' href='static/css/game.css'>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.4.0/fabric.min.js'></script>
+    </head>
+    <body>
+        <div id='controls'>
+            Terrain Variation: <input type='text' id='variation' value='30' size=3>
+            Hole Frequency: <input type='text' id='hole' value = '2' size=3>
+            Block Size: <input type='text' id='block_size' value = '25' size=3>
+            Speed: <input type='text' id='speed' value = '3' size=3>
+        </div>
+        <canvas id="c" width="1" height="300"></canvas>
+		<script data-main='static/js/main.js' src="static/js/require.js"></script>
+    </body>
+</html>
