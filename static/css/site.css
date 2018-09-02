@@ -9,7 +9,7 @@ On production sites, I would serve the font assets locally rather than
 use an external dependency. Live and die by your own infra, not someone
 else's, I say.
 */
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,600|Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600|Press+Start+2P');
 
 /*
 I'm using bootstrap because I'm a big fan of the mobile-first grid and responsive tools.
